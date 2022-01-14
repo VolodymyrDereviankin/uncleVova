@@ -11,11 +11,11 @@ public class TeslaPagerHelper extends TeslaPagerElements {
         driver.get("https://www.tesla.com/");
     }
 
-    public void clickModelX(){
+    public void clickModelX() {
         getModelX().click();
     }
 
-    public void clickOrderNow(){
+    public void clickOrderNow() {
         getOrderNow().click();
     }
 }

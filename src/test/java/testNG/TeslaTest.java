@@ -1,7 +1,6 @@
 package testNG;
 
 import holders.TestInit;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import pageObject.TeslaPagerHelper;
 
@@ -14,10 +13,8 @@ public class TeslaTest extends TestInit {
         tesla.openTesla();
         tesla.clickModelX();
         tesla.clickOrderNow();
-
-
     }
- }
+}
 
 
 
