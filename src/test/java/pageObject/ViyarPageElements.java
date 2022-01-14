@@ -40,7 +40,7 @@ public class ViyarPageElements extends DriverHolder {
         return driver.findElement(By.xpath("//button[@type='button']"));
     }
 
-    public WebElement getUploadfile(){
+    public WebElement getUploadfile() {
         return driver.findElement(By.xpath("//*[@class='btn-default col-lg-3']"));
     }
 
@@ -56,12 +56,12 @@ public class ViyarPageElements extends DriverHolder {
         return driver.findElement(By.xpath("//a[@href='/catalog/napravlyayushchie/']"));
     }
 
-    public WebElement getNapravlyayuchieP2O_350() {
-        return driver.findElement(By.xpath("//a[@href='/catalog/komplekt_napravlyayushchikh_quadro_chast_v_p2o_l_350_eb_23_dsp_do_19_mm/']"));
+    public WebElement getNapravlyayuchieQuatro_300() {
+        return driver.findElement(By.xpath("//a[@href='/catalog/komplekt_napravlyayushchikh_quadro_chast_v_s_dovodchikom_l_300_eb_23_dsp_do_19_mm/']"));
     }
 
     public WebElement getViyarTextNapravlyayuchie() {
-        return driver.findElement(By.xpath("//*[text()='Комплект направляющих Quadro част/в P2O L=350 EB=23 (ДСП до 19 мм) ']"));
+        return driver.findElement(By.xpath("//*[text()='Комплект направляющих Quadro част/в с доводчиком L=300 EB=23 (ДСП до 19 мм) ']"));
     }
 }
 

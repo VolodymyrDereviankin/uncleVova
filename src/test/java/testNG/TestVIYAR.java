@@ -34,9 +34,9 @@ public class TestVIYAR extends TestInit {
         viyar.clickEnter();
         viyar.clickFurnitura();
         viyar.clickNapravlyayuchie();
-        viyar.clickNapravlyayuchieP2O_350();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://viyar.ua/catalog/komplekt_napravlyayushchikh_quadro_chast_v_p2o_l_350_eb_23_dsp_do_19_mm/");
-        Assert.assertTrue(viyar.isTitleContains("Комплект направляющих Quadro част/в P2O L=350 EB=23 (ДСП до 19 мм)"));
+        viyar.clickNapravlyayuchieQuadro_300();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://viyar.ua/catalog/komplekt_napravlyayushchikh_quadro_chast_v_s_dovodchikom_l_300_eb_23_dsp_do_19_mm/");
+        Assert.assertTrue(viyar.isTitleContains("Комплект направляющих Quadro част/в с доводчиком L=300 EB=23 (ДСП до 19 мм)"));
         Assert.assertTrue(viyar.isTextDisplayedNapravlyayuchie());
 
     }
