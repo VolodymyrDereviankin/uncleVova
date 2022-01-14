@@ -43,7 +43,8 @@ public class ViyarPageHelper extends ViyarPageElements {
     public void clickMaterial() {
         getMaterial().click();
     }
-    public void clickUploadfile(){
+
+    public void clickUploadfile() {
         getUploadfile().click();
 
     }
@@ -57,21 +58,22 @@ public class ViyarPageHelper extends ViyarPageElements {
 
     }
 
-    public void clickFurnitura(){
+    public void clickFurnitura() {
         getFurnitura().click();
     }
 
-    public void clickNapravlyayuchie(){
+    public void clickNapravlyayuchie() {
         getNapravlyayuchie().click();
     }
 
-    public void clickNapravlyayuchieP2O_350(){
-        getNapravlyayuchieP2O_350().click();
+    public void clickNapravlyayuchieQuadro_300() {
+        getNapravlyayuchieQuatro_300().click();
     }
 
     public boolean isTextDisplayedNapravlyayuchie() {
         return getViyarTextNapravlyayuchie().isDisplayed();
-}}
+    }
+}
 
 
 
