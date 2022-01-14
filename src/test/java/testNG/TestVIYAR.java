@@ -17,6 +17,7 @@ public class TestVIYAR extends TestInit {
         viyar.clickConstructor();
         viyar.clickDsp();
         viyar.clickMaterial();
+        viyar.clickUploadfile();
         Assert.assertEquals(driver.getCurrentUrl(),"https://vp.viyar.ua/service/");
         Assert.assertTrue(viyar.isTitleContains("Веб-сервисы компании ВиЯр"));
         Assert.assertTrue(viyar.isTextDisplayed());

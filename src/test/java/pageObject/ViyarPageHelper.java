@@ -43,6 +43,10 @@ public class ViyarPageHelper extends ViyarPageElements {
     public void clickMaterial() {
         getMaterial().click();
     }
+    public void clickUploadfile(){
+        getUploadfile().click();
+
+    }
 
     public boolean isTitleContains(String title) {
         return driver.getTitle().contains(title);

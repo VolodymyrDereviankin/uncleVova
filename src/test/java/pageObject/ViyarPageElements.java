@@ -40,6 +40,10 @@ public class ViyarPageElements extends DriverHolder {
         return driver.findElement(By.xpath("//button[@type='button']"));
     }
 
+    public WebElement getUploadfile(){
+        return driver.findElement(By.xpath("//*[@class='btn-default col-lg-3']"));
+    }
+
     public WebElement getViyarText() {
         return driver.findElement(By.xpath("//*[text()='После загрузки файла, перед отправкой заявки / проекта необходимо обязательно проверить соответствие кромкования сторон и толщины кромки.']"));
     }
