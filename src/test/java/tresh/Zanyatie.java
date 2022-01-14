@@ -19,7 +19,6 @@ public class Zanyatie {
         chromedriver.findElement(By.xpath("//input")).clear();
         chromedriver.findElement(By.xpath("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted']")).click();
         String url = chromedriver.getCurrentUrl();
-        chromedriver.quit();
 
         Assert.assertEquals(url,"https://rozetka.com.ua/search/?text=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD");
 
