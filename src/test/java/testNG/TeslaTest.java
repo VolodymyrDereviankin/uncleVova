@@ -1,6 +1,7 @@
 package testNG;
 
 import holders.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObject.TeslaPagerHelper;
 
@@ -21,7 +22,9 @@ public class TeslaTest extends TestInit {
         tesla.openTesla();
         tesla.clickMenu();
         tesla.clickCybertrack();
-
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.tesla.com/cybertruck");
+        Assert.assertTrue(tesla.isTetleContaince("Cybertruck | Tesla"));
+        Assert.assertTrue(tesla.isTextDisplayedCybertrack());
     }
 }
 

@@ -26,4 +26,14 @@ public class TeslaPagerHelper extends TeslaPagerElements {
     public void clickCybertrack(){
         getCybertrack().click();
     }
+
+    public boolean isTetleContaince(String title){
+        return driver.getTitle().contains(title);
+    }
+
+
+
+    public boolean isTextDisplayedCybertrack(){
+        return getTextDisplayedCybertrack().isDisplayed();
+    }
 }
