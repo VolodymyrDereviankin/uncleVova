@@ -14,6 +14,15 @@ public class TeslaTest extends TestInit {
         tesla.clickModelX();
         tesla.clickOrderNow();
     }
+
+    @Test
+    public void checkCybertruck(){
+        TeslaPagerHelper tesla = new TeslaPagerHelper(driver);
+        tesla.openTesla();
+        tesla.clickMenu();
+        tesla.clickCybertrack();
+
+    }
 }
 
 

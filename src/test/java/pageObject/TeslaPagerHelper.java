@@ -18,4 +18,12 @@ public class TeslaPagerHelper extends TeslaPagerElements {
     public void clickOrderNow() {
         getOrderNow().click();
     }
+
+    public void clickMenu(){
+        getMenu().click();
+    }
+
+    public void clickCybertrack(){
+        getCybertrack().click();
+    }
 }
