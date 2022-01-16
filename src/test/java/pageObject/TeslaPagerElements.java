@@ -17,4 +17,12 @@ public class TeslaPagerElements extends DriverHolder {
     public WebElement getOrderNow() {
         return driver.findElements(By.xpath("//*[contains(text(),'Order Now')]")).get(0);
     }
+
+    public WebElement getMenu(){
+        return driver.findElements(By.xpath("//span[@class='tds-site-nav-item-text']")).get(8);
+    }
+
+    public WebElement getCybertrack(){
+        return driver.findElements(By.xpath("//span[@class='tds-site-nav-item-text']")).get(13);
+    }
 }
