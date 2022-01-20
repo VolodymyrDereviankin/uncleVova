@@ -13,7 +13,9 @@ public class TeslaTest extends TestInit {
         TeslaPagerHelper tesla = new TeslaPagerHelper(driver);
         tesla.openTesla();
         tesla.clickModelX();
-        tesla.clickOrderNow();
+        //tesla.clickOrderNow();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.tesla.com/modelx");
+        Assert.assertTrue(tesla.isTetleContaince("Model X | Tesla"));
     }
 
     @Test

@@ -26,10 +26,6 @@ public class TeslaPagerElements extends DriverHolder {
         return driver.findElements(By.xpath("//span[@class='tds-site-nav-item-text']")).get(13);
     }
 
-
-
-
-
     public WebElement getTextDisplayedCybertrack(){
         return driver.findElements(By.xpath("//*[contains(text(),'BETTER UTILITY THAN A TRUCK')]")).get(0);
     }
