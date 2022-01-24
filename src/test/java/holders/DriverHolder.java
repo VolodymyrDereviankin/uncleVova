@@ -1,5 +1,6 @@
 package holders;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,5 +30,12 @@ public class DriverHolder {
                 ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
     }
 
+    public void waitSeconds(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
