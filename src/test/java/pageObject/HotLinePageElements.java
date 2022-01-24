@@ -26,6 +26,10 @@ public class HotLinePageElements extends DriverHolder {
         return driver.findElement(By.xpath("//*[contains(@class, 'title__main')]"));
     }
 
+    public WebElement getPhilips(){
+        return driver.findElements(By.xpath("//*[@href='/av-televizory/philips-32pfs6805/']")).get(0);
+    }
+
 }
 
 
