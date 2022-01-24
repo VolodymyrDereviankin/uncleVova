@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObject.HotLinePageHelper;
 
-public class TestHotLineSearchMacBook extends TestInit {
+public class TestHotLine extends TestInit {
     @Test
     public void hotLineSearchMacBook() {
         String macBookName = "Apple MacBook Pro 16” Space Gray 2021";
@@ -18,4 +18,16 @@ public class TestHotLineSearchMacBook extends TestInit {
 
 
     }
-}
+
+
+        @Test
+    public void hotLineSearchPhilips(){
+            String philipsName = "Philips 32PFS6805";
+            HotLinePageHelper hotLine = new HotLinePageHelper(driver);
+            hotLine.getHotLine();
+            hotLine.searchForItem(philipsName);
+            hotLine.searchPhilips();
+            Assert.assertTrue(hotLine.isHeadLineContains(philipsName));
+        }
+    }
+

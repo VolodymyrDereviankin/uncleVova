@@ -9,15 +9,14 @@ public class HotLinePageHelper extends HotLinePageElements{
     }
 
 
-
     public void getHotLine(){
         driver.get("https://hotline.ua/");
         waitForPageLoad();
     }
 
     public void searchForItem(String item){
-        getSearchField().sendKeys(item);
-        getSearchField().sendKeys(Keys.ENTER);
+        getSearchField().sendKeys(item, Keys.ENTER);
+//        getSearchField().sendKeys(Keys.ENTER);
     }
 
     public void showMoreResults(){
@@ -35,6 +34,10 @@ public class HotLinePageHelper extends HotLinePageElements{
     }
     public boolean isHeadLineContains(String name){
         return getHeadLine().getText().contains(name);
+    }
+
+    public void searchPhilips(){
+        getPhilips().click();
     }
 
 
