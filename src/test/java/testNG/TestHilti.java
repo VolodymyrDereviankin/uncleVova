@@ -10,6 +10,7 @@ public class TestHilti extends TestInit {
     public void hiltiVacuumCleaner(){
         String vacuumCleanerName = "VC 20L-X КОМПАКТНЫЙ ПРОМЫШЛЕННЫЙ ПЫЛЕСОС ДЛЯ СУХОЙ/ВЛАЖНОЙ УБОРКИ";
         HiltiPageHelper hilti = new HiltiPageHelper(driver);
+
         hilti.getHilti();
         hilti.openProduct();
         hilti.openDustRemovalAndVacuumCleaner();
@@ -20,6 +21,7 @@ public class TestHilti extends TestInit {
         hilti.closetDontShowAgain();
         hilti.openCoshic();
         Assert.assertTrue(hilti.isHeadLineContains(vacuumCleanerName));
+        Assert.assertEquals(hilti.getHeadLine().getText(), vacuumCleanerName);
 
 
     }
