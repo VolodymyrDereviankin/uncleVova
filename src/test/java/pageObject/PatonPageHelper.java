@@ -19,4 +19,13 @@ public class PatonPageHelper extends PatonPageElement{
     public void searchPatonStandardTIG200(){
         getStandardTIG200().click();
     }
+
+    public void addToBookmarks(){
+        getToBookmarks().click();
+        waitSeconds(2);
+    }
+
+    public boolean isHeadLineContains(String name){
+        return getHeadLine().getText().contains(name);
+    }
 }

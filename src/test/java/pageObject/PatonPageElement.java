@@ -22,5 +22,14 @@ public class PatonPageElement extends DriverHolder {
         return driver.findElements(By.xpath("//*[contains(text(),'Руковолство пользователя StandardTIG-160, StandardTIG-200')]")).get(0);
     }
 
+    public WebElement getToBookmarks(){
+        return driver.findElements(By.xpath("//button[@data-original-title='В закладки']")).get(0);
+    }
+
+    public WebElement getHeadLine(){
+//        return driver.findElement(By.xpath("//a[text()='Сварочный аппарат PATON™ StandardTIG-200']"));
+        return driver.findElement(By.xpath("//*[text()=' Вы добавили ']"));
+    }
+
 
 }
