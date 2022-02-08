@@ -12,6 +12,7 @@ public class PhilipsTest extends TestInit {
         PhilipsPageHelper philips = new PhilipsPageHelper(driver);
         philips.openPhilips();
         philips.clickCatalog();
+        philips.clickSoundAndImage();
         philips.clickAudioForHome();
         philips.clickAudioM8905();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.philips.ua/c-m-so/home-audio");
@@ -26,6 +27,8 @@ public class PhilipsTest extends TestInit {
         PhilipsPageHelper philips = new PhilipsPageHelper(driver);
         philips.openPhilips();
         philips.clickCatalog();
+        philips.getSoundAndImage();
         philips.clickTV();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.philips.ua/c-m-so/tv");
     }
 }
