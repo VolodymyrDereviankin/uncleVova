@@ -31,7 +31,11 @@ public class PhilipsPageHelper extends PhilipsPageElements {
         driver.get("https://www.philips.ua/c-m-so/tv");
     }
 
-    public boolean isTextDisplayd(){
+    public boolean isTextDisplayd() {
         return getM8905().isDisplayed();
+    }
+
+    public void clickSoundAndImage(){
+        getSoundAndImage().click();
     }
 }
