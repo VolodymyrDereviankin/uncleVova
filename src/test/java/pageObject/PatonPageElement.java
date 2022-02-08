@@ -19,7 +19,7 @@ public class PatonPageElement extends DriverHolder {
     }
 
     public WebElement getUserManualStandardTIG200(){
-        return driver.findElements(By.xpath("//*[contains(text(),'Руковолство пользователя StandardTIG-160, StandardTIG-200')]")).get(0);
+        return driver.findElements(By.xpath("//*[contains(text(),'Руководство пользователя StandardTIG-200 (2.03MB)')]")).get(0);
     }
 
     public WebElement getToBookmarks(){
