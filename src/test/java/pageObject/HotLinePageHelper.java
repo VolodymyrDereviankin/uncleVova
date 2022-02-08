@@ -8,7 +8,6 @@ public class HotLinePageHelper extends HotLinePageElements{
         super(driver);
     }
 
-
     public void getHotLine(){
         driver.get("https://hotline.ua/");
         waitForPageLoad();
